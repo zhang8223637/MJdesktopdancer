@@ -1,0 +1,19 @@
+{
+  "name": "mj-desktop-dancer",
+  "version": "0.2.0",
+  "description": "Desktop Michael Jackson that dances to your music's beat",
+  "main": "src/main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --enable-logging"
+  },
+  "keywords": ["electron", "desktop-pet", "music", "beat-detection"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "electron-store": "^9.0.0"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0"
+  }
+}

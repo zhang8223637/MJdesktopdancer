@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MJ 设置</title>
+    <link rel="stylesheet" href="settings.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>MJ 设置</h1>
+
+      <section class="card">
+        <h2>音频</h2>
+        <label class="row">
+          <span>fftSize</span>
+          <select id="fftSize">
+            <option value="512">512</option>
+            <option value="1024">1024</option>
+            <option value="2048">2048</option>
+          </select>
+        </label>
+        <label class="row">
+          <span>bassRange lo</span>
+          <input id="bassLo" type="number" min="0" max="1024" step="1" />
+        </label>
+        <label class="row">
+          <span>bassRange hi</span>
+          <input id="bassHi" type="number" min="1" max="1024" step="1" />
+        </label>
+      </section>
+
+      <section class="card">
+        <h2>节拍</h2>
+        <label class="row">
+          <span>beatThreshold</span>
+          <input id="beatThreshold" type="number" min="1" max="3" step="0.05" />
+        </label>
+        <label class="row">
+          <span>minEnergy</span>
+          <input id="minEnergy" type="number" min="0" max="255" step="1" />
+        </label>
+        <label class="row">
+          <span>beatCooldownMs</span>
+          <input id="beatCooldownMs" type="number" min="0" max="1000" step="10" />
+        </label>
+        <label class="row">
+          <span>historySize</span>
+          <input id="historySize" type="number" min="5" max="240" step="1" />
+        </label>
+      </section>
+
+      <section class="card">
+        <h2>高级</h2>
+        <button id="reset">恢复默认</button>
+      </section>
+
+      <p class="hint">调参默认实时生效；重启应用会保持你的设置。</p>
+    </div>
+    <script src="settings.js"></script>
+  </body>
+</html>
