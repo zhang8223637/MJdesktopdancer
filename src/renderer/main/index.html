@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MJ Dancer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <img
+        id="mj"
+        src="../../../assets/mj-dance.gif"
+        onerror="this.src='../../../assets/placeholder.svg'"
+        alt="MJ"
+        draggable="false"
+      />
+      <div id="status">等待音频...</div>
+    </div>
+    <script src="../beatDetector.js"></script>
+    <script src="renderer.js"></script>
+  </body>
+</html>
